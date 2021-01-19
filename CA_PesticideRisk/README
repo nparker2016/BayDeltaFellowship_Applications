@@ -1,1 +1,57 @@
+This project processes and employs pesticide toxicity and use data for the the evaluation of risk in Califonria. Pesticide use data is compiled from the California Pesticide Information Portal (https://calpip.cdpr.ca.gov/main.cfm) and toxicity data from the USEPA ECOTOX database (https://cfpub.epa.gov/ecotox/)
+
+
+GETTING STARTED
+
+These instructions will enable the user to obtain a copy of of the project for personal use. 
+
+1) Project code was written for RStudio, however, the user can access all raw data as well as analysis outputs such as graphs and reports external to the RStudio user interface as common file extensions were employed (e.g. PDF, csv, jpeg). The 'data' sub-directory hosts all raw data, 'docs' descriptions of analyses, 'graphs' graphical illustrations of analysis results, and 'reports' a summary of analysis results.
+
+2) For users seeking to update and modify project outputs, the project configuration is located in the 'config' sub-directory which provides details as related to default workspace parameters and packages required to run existing code. All scripts used to pre-process data are located in the 'munge' sub-directory, and analysis scripts are in the 'src' sub-directory. 
+
+To load this project, you'll first need to `setwd()` into the directory
+where this README file is located. Then you need to run the following two
+lines of R code:
+
+	library('ProjectTemplate')
+	load.project()
+
+After you enter the second line of code, you'll see a series of automated
+messages as ProjectTemplate goes about doing its work. This work involves:
+* Reading in the global configuration file contained in `config`.
+* Loading any R packages in the configuration file.
+* Reading in any datasets stored in `data` or `cache`.
+* Preprocessing your data using the files in the `munge` directory.
+
+Once that's done, you can execute any code you'd like in the 'src' direcotry and you'll have access to all of the project data, already fully preprocessed, and
+all of the libraries used during project development.
+
+This project was developed using ProjectTemplate, see http://projecttemplate.net for more details.
+
+
+BUILT WITH
+
+RStudio
+platform       x86_64-apple-darwin15.6.0   
+arch           x86_64                      
+os             darwin15.6.0                
+system         x86_64, darwin15.6.0        
+status                                     
+major          3                           
+minor          5.2                         
+year           2018                        
+month          12                          
+day            20                          
+svn rev        75870                       
+language       R                           
+version.string R version 3.5.2 (2018-12-20)
+nickname       Eggshell Igloo 
+
+VERSIONING
+
+Version 1.0.0
+
+AUTHORS
+
+Nicol Parker, PhD Student University California Santa Barbara
 
