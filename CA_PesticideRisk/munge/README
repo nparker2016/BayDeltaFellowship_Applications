@@ -1,0 +1,14 @@
+Here scripts to pre-process or clean (munge) data are stored.  The preprocessing scripts stored in `munge` will be executed sequentially when you call `load.project()`, so the filenames are in alphanumeric order to ensure they are run correctly using the prefix 'M1', 'M2', 'M...'
+
+Prior to using the munge scripts, you must set up your work environment with the following code:
+setwd('YourRootDirectory/Applications')
+library(ProjectTemplate)
+load.project()
+
+Munge Contents:
+
+M1_PesticideLoad_CA: Aggregates all pesticide use data of interest for the analysis period from the California Department of Pesticide Regulation Pesticide Use Reports. Modify the beginning of the script under '#User Inputs' to specify which chemicals you will analyze as well as your analysis period.
+
+M2_AquaticHealthBenchmark_PTI_HC5: Wrangles toxicity data attained from the Pesticide Toxicity Index database. From the database, the script employs the most sensitive toxic concentration of fish, cladocerans, and benthic organisms. Source: Nowell, L. H. et al. Complex mixtures of dissolved pesticides show potential aquatic toxicity in a synoptic study of Midwestern U.S. streams. Sci. Total Environ. 613–614, 1469–1488 (2018).
+
+M3_HUC8_CA_PesticideAquaticToxicity_minSTC: Calculates aquatic toxic loads at the hydrologic unit code 8 (HUC8) scale across California using the aquatic health benchmark derived from the Pesticide Toxicity Index database. 
