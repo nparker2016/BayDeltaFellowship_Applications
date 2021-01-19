@@ -1,0 +1,1 @@
+Here we store useful summaries as relate9d to pesticide toxic loads across watersheds in California once you run project scripts in the CA_PesticideRisk project directory. Any output reports, such as HTML or LaTeX versions of tables, that you produce should also be stgored here. Sweave or brew documents should also go in the `reports` directory.
